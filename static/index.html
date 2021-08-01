@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shorcut icon" type="image" href="../images/cloud-blue.png">
+    <title>Weather app</title>
+</head>
+<body class="light">
+    <section class="flex">
+        <form id="city-form" class="flex">
+            <h1>World Weather</h1>
+            <div id="city-input-submit" class="flex">
+                <input type="text" placeholder="Type in your location" id="city-name-input"/>
+            </div>
+            <div id="button-container" class="flex">
+                <button type="submit" class="current-btn">Current weather</button>
+            </div>
+        </form>
+
+        <div id="day" class="day flex">
+            <div id="weather-icons" class="flex">
+                <h2 id="weekday" class="flex"></h2>
+                <span class="temperature flex"></span>
+                <span class="description flex"></span>
+                <img id="icon" class="" src="" alt="">
+            </div>
+    </section>
+
+    <footer class="flex">
+        <p><a href="https://www.linkedin.com/in/nathaliepiat" target="blank" class="copyright">© 2021 - Made with love by Nathalie Piat.</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="../scripts/app.js"></script>
+
+</body>
+</html>
