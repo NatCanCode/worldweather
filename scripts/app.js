@@ -107,22 +107,22 @@ function weatherIcons(current, weatherId) {
     let imgSrc = "../images/";
         switch (current) {
             case "Clear":
-                imgSrc = imgSrc + "sun-white.png"
+                imgSrc = imgSrc + "sun.svg"
                 break;
             case "Snow":
-                imgSrc = imgSrc + "snow-white.png"
+                imgSrc = imgSrc + "snow.svg"
               break;
             case "Clouds":
                 // if > 50% clouds:
                 // console.log(weatherId);
                 if (weatherId == "801" || weatherId == "802") {
-                    imgSrc = imgSrc + "cloudy-white.png"
+                    imgSrc = imgSrc + "cloudy.svg"
                 } else if (weatherId == "803" || weatherId == "804") {
-                    imgSrc = imgSrc + "clouds-white.png"
+                    imgSrc = imgSrc + "clouds.svg"
                 }
                 break;
             default:
-                imgSrc = imgSrc + "rain-white.png"
+                imgSrc = imgSrc + "rain.svg"
                 break;
         }
         let image = document.getElementById("icon");
@@ -130,5 +130,6 @@ function weatherIcons(current, weatherId) {
         let visible = document.getElementById("weather-icons");
         visible.style.display = "block"
 }
+
 
 
